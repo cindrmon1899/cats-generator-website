@@ -15,4 +15,11 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+body {
+  background-attachment: fixed;
+  background-color: #781dff;
+  background-image: radial-gradient(#781dff, black);
+  background-size: 100% auto;
+}
+</style>
