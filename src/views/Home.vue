@@ -11,6 +11,12 @@
       <span class="text-cyan">{{ selectedCatTrait }}</span
       ><br />
       <span>cat</span><br />
+      <button
+        @click="regenerate()"
+        class="bg-yellow-dark hover:bg-yellow font-bold py-4 px-4 text-2xl rounded-lg"
+      >
+        Regenerate
+      </button>
     </div>
   </div>
 </template>
@@ -23,17 +29,23 @@ export default {
   data() {
     return {
       catNames: [],
+      catNameValue: 0,
       catTraits: [],
+      catTraitValue: 0,
     };
+  },
+  methods: {
+    regenerate() {
+      this.catNameValue = Math.floor(Math.random() * this.catNames.length);
+      this.catTraitValue = Math.floor(Math.random() * this.catTraits.length);
+    },
   },
   computed: {
     selectedCatName() {
-      let randomValue = Math.floor(Math.random() * this.catNames.length);
-      return this.catNames[randomValue];
+      return this.catNames[this.catNameValue];
     },
     selectedCatTrait() {
-      let randomValue = Math.floor(Math.random() * this.catTraits.length);
-      return this.catTraits[randomValue];
+      return this.catTraits[this.catTraitValue];
     },
   },
   async created() {
