@@ -9,6 +9,9 @@
 import Navbar from "@/components/partials/Navbar";
 export default {
   name: "App",
+  metaInfo: {
+    titleTemplate: "%s | Cats Name Generator",
+  },
   components: {
     Navbar,
   },

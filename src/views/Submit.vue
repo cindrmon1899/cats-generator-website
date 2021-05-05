@@ -7,6 +7,9 @@
 <script>
 export default {
   name: "Submit",
+  metaInfo: {
+    title: "Submit Your Own",
+  },
 };
 </script>
 

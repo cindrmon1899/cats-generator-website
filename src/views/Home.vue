@@ -26,6 +26,9 @@
 
 export default {
   name: "Home",
+  metaInfo: {
+    title: "Generate",
+  },
   data() {
     return {
       catNames: [],
