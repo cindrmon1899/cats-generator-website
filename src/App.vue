@@ -22,4 +22,14 @@ body {
   background-image: radial-gradient(#781dff, black);
   background-size: 100% auto;
 }
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", sans-serif;
+}
 </style>

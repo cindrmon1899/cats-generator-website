@@ -126,6 +126,14 @@ let colors = {
   "pink-light": "#fa7ea8",
   "pink-lighter": "#ffbbca",
   "pink-lightest": "#ffebef",
+
+  "cyan-dark": "#008F8F",
+  cyan: "#00FFFF",
+  "cyan-light": "#85FFFF",
+
+  "jf-purple-dark": "#4100A3",
+  "jf-purple": "#781dff",
+  "jf-purple-light": "#C299FF",
 };
 
 module.exports = {
@@ -867,6 +875,7 @@ module.exports = {
     shadows: ["responsive", "hover", "focus"],
     svgFill: [],
     svgStroke: [],
+    tableLayout: ["responsive"],
     textAlign: ["responsive"],
     textColors: ["responsive", "hover", "focus"],
     textSizes: ["responsive"],
