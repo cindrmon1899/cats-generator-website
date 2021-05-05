@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import EventService from "@/services/EventService.js";
 // @ is an alias to /src
 
 export default {
@@ -52,12 +53,8 @@ export default {
     },
   },
   async created() {
-    const { data: catNames } = await this.$supabase
-      .from("cat_names")
-      .select("name");
-    const { data: catTraits } = await this.$supabase
-      .from("cat_traits")
-      .select("name");
+    const { data: catNames } = await EventService.fetchCatNames();
+    const { data: catTraits } = await EventService.fetchCatTraits();
 
     this.catNames = catNames.map((item) => item.name);
     this.catTraits = catTraits.map((item) => item.name);
