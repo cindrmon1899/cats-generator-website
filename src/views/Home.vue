@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <div class="height-screen align-middle text-center py-52">
+  <div id="home" class="flex h-screen">
+    <div class="m-auto align-middle text-center py-52">
       <span>My name is</span><br />
       <span class="text-cyan">{{ catName }}</span
       ><br />
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home {
+#home {
   font-family: cooper-black-std, serif;
   color: white;
   font-size: 5rem;
