@@ -2,6 +2,9 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Meta from "vue-meta";
 import Home from "../views/Home.vue";
+import Submit from "../views/Submit.vue";
+import About from "../views/About.vue";
+import FourOhFour from "../views/FourOhFour.vue";
 
 Vue.use(VueRouter);
 Vue.use(Meta);
@@ -15,23 +18,17 @@ const routes = [
   {
     path: "/submit",
     name: "Submit",
-    component: () =>
-      import(/* webpackChunkName: "submit" */ "../views/Submit.vue"),
+    component: Submit,
   },
   {
     path: "/about",
     name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    component: About,
   },
   {
     path: "/404",
     name: "404",
-    component: () =>
-      import(/* webpackChunkName: "404" */ "../views/FourOhFour.vue"),
+    component: FourOhFour,
   },
   {
     path: "*",
