@@ -1,8 +1,8 @@
 <template>
-  <div id="home" class="flex h-screen">
+  <div id="home">
     <div
       v-if="selectedCatName !== undefined && selectedCatTrait !== undefined"
-      class="m-auto align-middle text-center py-52"
+      class="custom-container center"
     >
       <span>My name is</span><br />
       <span class="text-cyan">{{ selectedCatName }}</span
@@ -11,12 +11,7 @@
       <span class="text-cyan">{{ selectedCatTrait }}</span
       ><br />
       <span>cat</span><br />
-      <button
-        @click="regenerate()"
-        class="bg-yellow-dark hover:bg-yellow font-bold py-4 px-4 text-2xl rounded-lg"
-      >
-        Regenerate
-      </button>
+      <button @click="regenerate()" class="button yellow">Regenerate</button>
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
-  <div id="fourOhFour" class="flex h-screen">
-    <div class="m-auto align-middle text-center py-5 flex flex-col">
+  <div id="fourOhFour">
+    <div class="custom-container center flex flex-col">
       <h1 class="pb-10">Whoops! There is no page here. Look somewhere else!</h1>
       <iframe
         class="mx-auto pb-10"
