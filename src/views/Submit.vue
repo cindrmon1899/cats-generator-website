@@ -1,6 +1,8 @@
 <template>
   <div id="submitForm">
-    <h1>Submit Here!</h1>
+    <div class="custom-container center">
+      <h1>Submit Here!</h1>
+    </div>
   </div>
 </template>
 
