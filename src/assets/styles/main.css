@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/epv1rpd.css");
+
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -96,4 +98,8 @@
   @variants focus, hover {
     @apply bg-yellow;
   }
+}
+
+.custom-submit-form-control {
+  @apply bg-transparent text-cyan w-auto text-center text-6xl !important;
 }

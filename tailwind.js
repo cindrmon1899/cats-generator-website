@@ -211,18 +211,7 @@ module.exports = {
       "Helvetica Neue",
       "sans-serif",
     ],
-    serif: [
-      "Constantia",
-      "Lucida Bright",
-      "Lucidabright",
-      "Lucida Serif",
-      "Lucida",
-      "DejaVu Serif",
-      "Bitstream Vera Serif",
-      "Liberation Serif",
-      "Georgia",
-      "serif",
-    ],
+    serif: ["cooper-black-std", "serif"],
     mono: [
       "Menlo",
       "Monaco",
@@ -262,6 +251,8 @@ module.exports = {
     "3xl": "1.875rem", // 30px
     "4xl": "2.25rem", // 36px
     "5xl": "3rem", // 48px
+    "6xl": "3.25rem",
+    "mega-boi": "5rem",
   },
 
   /*

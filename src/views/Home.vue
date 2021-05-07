@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="home" class="font-serif text-7xl md:text-mega-boi">
     <div
       v-if="selectedCatName !== undefined && selectedCatTrait !== undefined"
       class="custom-container center"
@@ -56,13 +56,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-#home {
-  font-family: cooper-black-std, serif;
-  font-size: 5rem;
-  @media screen and (max-width: 768px) {
-    font-size: 3.25rem;
-  }
-}
-</style>
