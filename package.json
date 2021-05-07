@@ -8,8 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@hcaptcha/vue-hcaptcha": "^0.3.0",
     "@supabase/supabase-js": "^1.11.9",
     "core-js": "^3.6.5",
+    "cors": "^2.8.5",
     "dotenv-flow": "^3.2.0",
     "ssri": "^7.1.0",
     "vue": "^2.6.11",

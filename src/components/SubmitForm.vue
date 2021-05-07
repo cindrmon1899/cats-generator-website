@@ -18,6 +18,10 @@
         class="custom-submit-form-control"
       />
       <span class="text-6xl">cat</span><br />
+      <!-- <VueHCaptcha
+        sitekey="569b4ff3-3485-4b44-a756-5baae1e7666f"
+        theme="dark"
+      /> -->
       <input
         class="button shrink center yellow pt-10"
         type="submit"
@@ -29,8 +33,12 @@
 
 <script>
 import EventService from "@/services/EventService.js";
+// import VueHCaptcha from "@hcaptcha/vue-hcaptcha";
 export default {
   name: "SubmitForm",
+  //   components: {
+  //     VueHCaptcha,
+  //   },
   data() {
     return {
       form: {
