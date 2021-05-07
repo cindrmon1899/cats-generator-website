@@ -1,6 +1,6 @@
 <template>
   <div id="SubmitForm">
-    <form class="flex flex-col">
+    <form class="flex flex-col" @submit="onSubmit">
       <span class="text-6xl">My name is</span>
       <input
         type="text"
@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import EventService from "@/services/EventService.js";
 export default {
   name: "SubmitForm",
   data() {
@@ -37,6 +38,21 @@ export default {
         catTrait: "",
       },
     };
+  },
+  methods: {
+    async onSubmit(e) {
+      e.preventDefault();
+      //   const { data: retCatName } =
+      await EventService.addCatName(this.form.catName);
+      //   const { data: retCatTrait } =
+      await EventService.addCatTrait(this.form.catTrait);
+
+      //   console.log(retCatName);
+      //   console.log(retCatTrait);
+
+      this.form.catName = "";
+      this.form.catTrait = "";
+    },
   },
 };
 </script>

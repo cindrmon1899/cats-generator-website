@@ -14,4 +14,14 @@ export default {
   fetchCatTraits() {
     return supabaseClient.from("cat_traits").select("name");
   },
+  addCatName(catName) {
+    return supabaseClient
+      .from("user_generated_cat_names")
+      .insert({ name: catName });
+  },
+  addCatTrait(catTrait) {
+    return supabaseClient
+      .from("user_generated_cat_traits")
+      .insert({ name: catTrait });
+  },
 };
