@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="font-serif text-7xl md:text-mega-boi">
+  <div id="home" class="font-serif text-6xl md:text-mega-boi">
     <div
       v-if="selectedCatName !== undefined && selectedCatTrait !== undefined"
       class="custom-container center"

@@ -86,11 +86,19 @@
 #about,
 #fourOhFour,
 #submitForm {
-  @apply flex h-screen;
+  @apply flex h-screen font-serif;
 }
 
 .custom-container.center {
   @apply m-auto align-middle text-center py-5;
+}
+
+.button.center {
+  @apply mx-auto;
+}
+
+.button.shrink {
+  @apply w-1/2;
 }
 
 .button.yellow {
@@ -101,5 +109,5 @@
 }
 
 .custom-submit-form-control {
-  @apply bg-transparent text-cyan w-auto text-center text-6xl !important;
+  @apply bg-transparent text-cyan w-auto py-0 text-center text-6xl !important;
 }

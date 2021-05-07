@@ -1,7 +1,7 @@
 <template>
   <div id="submitForm">
-    <div class="custom-container center">
-      <h1>Submit Here!</h1>
+    <div class="custom-container center overflow-auto">
+      <h1 class="text-6xl pb-5">Submit Here!</h1>
       <SubmitForm />
     </div>
   </div>
