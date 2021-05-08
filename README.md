@@ -2,7 +2,7 @@
 
 ### New and Improved!
 
-Check out v1 [here](https://cats-name-generator.herokuapp.com/)
+> Check out v1 [here](https://cats-name-generator.herokuapp.com/)
 
 ## Project setup
 ```
