@@ -1,4 +1,8 @@
-# cats-name-generator-v2
+# Cats Name Generator v2
+
+### New and Improved!
+
+Check out v1 [here](https://cats-name-generator.herokuapp.com/)
 
 ## Project setup
 ```
