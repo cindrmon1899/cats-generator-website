@@ -7,7 +7,8 @@
         name="cat_name"
         v-model="form.catName"
         placeholder="cat name"
-        class="custom-submit-form-control"
+        class="custom-submit-form-control outline-none"
+        autocomplete="off"
       />
       <span class="text-6xl">and I'm the </span>
       <input
@@ -15,10 +16,13 @@
         name="cat_trait"
         v-model="form.catTrait"
         placeholder="cat trait"
-        class="custom-submit-form-control"
+        class="custom-submit-form-control outline-none"
+        autocomplete="off"
       />
       <span class="text-6xl">cat</span><br />
-      <!-- <VueHCaptcha
+      <!-- 
+        TODO: Add Captcha
+        <VueHCaptcha
         sitekey="569b4ff3-3485-4b44-a756-5baae1e7666f"
         theme="dark"
       /> -->
